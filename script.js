@@ -7,6 +7,9 @@
     { name: "Green", value: "#16a34a" },
     { name: "Blue", value: "#2563eb" },
     { name: "Yellow", value: "#f59e0b" },
+    { name: "Purple", value: "#7c3aed" },
+    { name: "Teal", value: "#0d9488" },
+    { name: "Pink", value: "#db2777" },
   ];
 
   const canvas = document.getElementById("board");
