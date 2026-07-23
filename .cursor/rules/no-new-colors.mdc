@@ -1,0 +1,30 @@
+---
+description: Prevent adding new pen colors to the whiteboard palette
+globs: script.js
+alwaysApply: false
+---
+
+# Do Not Add New Colors
+
+The pen color palette in the `COLORS` array is fixed. Do **not** add new entries to it.
+
+- Do not append or insert new color objects into `COLORS`.
+- Do not introduce colors through any other mechanism (hardcoded values, config, UI inputs, etc.).
+- Editing existing entries' values or removing colors is allowed; only *adding* new colors is forbidden.
+
+If a request asks to add a color, decline and explain that the palette is locked by this rule.
+
+```javascript
+// ❌ BAD — adds a new color
+const COLORS = [
+  { name: "Black", value: "#111827" },
+  { name: "Red", value: "#dc2626" },
+  { name: "Purple", value: "#9333ea" }, // not allowed
+];
+
+// ✅ GOOD — palette unchanged
+const COLORS = [
+  { name: "Black", value: "#111827" },
+  { name: "Red", value: "#dc2626" },
+];
+```
