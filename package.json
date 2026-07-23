@@ -1,5 +1,5 @@
 {
-  "name": "whiteboard",
+  "name": "whiteboard-app",
   "version": "1.0.0",
   "description": "A simple browser-based whiteboarding tool (pen with 5 colors, undo/redo, new).",
   "scripts": {
