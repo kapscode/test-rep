@@ -5,6 +5,7 @@
     { name: "Black", value: "#111827" },
     { name: "Red", value: "#dc2626" },
     { name: "Green", value: "#16a34a" },
+    { name: "Light Green", value: "#4ade80" },
     { name: "Blue", value: "#2563eb" },
     { name: "Yellow", value: "#f59e0b" },
   ];
