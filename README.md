@@ -5,7 +5,7 @@ A simple browser-based whiteboarding tool — like a basic Microsoft Paint in th
 ## Features
 
 - Freehand pen drawing on a full-window canvas
-- 5 pen colors (black, red, green, blue, yellow)
+- 8 pen colors (black, red, green, blue, yellow, purple, teal, pink)
 - Adjustable brush size
 - Undo / Redo (buttons and keyboard shortcuts: `Ctrl/Cmd+Z`, `Ctrl/Cmd+Y` or `Ctrl/Cmd+Shift+Z`)
 - New (clears the canvas)
