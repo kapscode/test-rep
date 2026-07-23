@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whiteboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="toolbar">
+    <div class="toolbar__group toolbar__group--brand">
+      <span class="brand">Whiteboard</span>
+    </div>
+
+    <div class="toolbar__group" role="group" aria-label="Pen colors">
+      <span class="toolbar__label">Colors</span>
+      <div class="swatches" id="swatches"></div>
+    </div>
+
+    <div class="toolbar__group" role="group" aria-label="Brush size">
+      <span class="toolbar__label">Size</span>
+      <input
+        type="range"
+        id="brushSize"
+        min="1"
+        max="40"
+        value="4"
+        aria-label="Brush size"
+      />
+      <span class="brush-size-value" id="brushSizeValue">4</span>
+    </div>
+
+    <div class="toolbar__group toolbar__group--actions">
+      <button type="button" id="undoBtn" class="btn" title="Undo (Ctrl+Z)" disabled>
+        Undo
+      </button>
+      <button type="button" id="redoBtn" class="btn" title="Redo (Ctrl+Y)" disabled>
+        Redo
+      </button>
+      <button type="button" id="newBtn" class="btn btn--danger" title="New (clear canvas)">
+        New
+      </button>
+    </div>
+  </header>
+
+  <main class="canvas-wrap">
+    <canvas id="board" aria-label="Drawing canvas"></canvas>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
